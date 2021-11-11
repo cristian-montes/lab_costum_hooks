@@ -5,7 +5,7 @@ const AvatarList = ({allAvatars, isLoading}) => {
     return(
         <ul>
             { allAvatars.map(({id, allies ,name, affiliation,image, enemies}) => (
-                <li key={id}>
+                <li key={id} style={{listStyleType:"none"}}>
 
                     <Avatar
                         id={id}
