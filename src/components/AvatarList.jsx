@@ -1,5 +1,6 @@
 import React from 'react';
 import { Avatar } from './Avatar';
+import PropTypes from 'prop-types'
 
 const AvatarList = ({allAvatars, isLoading}) => {
     return(
@@ -23,6 +24,11 @@ const AvatarList = ({allAvatars, isLoading}) => {
         
        
     )
+}
+
+AvatarList.propTypes = { 
+    allAvatars: PropTypes.array.isRequired,
+    isLoading: PropTypes.bool.isRequired
 }
 
 export default AvatarList;
