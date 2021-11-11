@@ -15,3 +15,13 @@ export const fetchAvatars = async () => {
 
     return avataros;
 }
+
+
+export const getOneAvatar = async (id) => { 
+    
+    const res = await fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}?affiliation=Water+Tribe`);
+    
+    const oneCharacter = await res.json();
+    
+    return oneCharacter;
+}
