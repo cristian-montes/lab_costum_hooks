@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation} from 'react-router-dom';
+import ThemeToggler from './ThemeToggler';
 
 
 
@@ -14,9 +15,8 @@ export  const Header = () =>{
 
     return(
         <div>
-            <div>
             {redirectLink}
-            </div>
+            <ThemeToggler/>
         </div>
     )
 }

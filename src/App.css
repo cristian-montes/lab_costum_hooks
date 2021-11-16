@@ -1,8 +1,24 @@
-.App {
-  text-align: center;
+
+[data-theme="light"]{
+  --text-color: black;
+  --background-color: pink;
 }
 
-.App-logo {
+[data-theme="dark"]{
+  --text-color: #fcfcfc;
+  --background-color: #1d1c1c;
+}
+
+
+
+
+.App {
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -22,9 +38,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +51,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
